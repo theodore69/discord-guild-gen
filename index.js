@@ -244,7 +244,7 @@ async function mainLoop() {
         await PPLA_FINGERPRINTS();
 
 console.log("warming up the env for low spam detection... please wait");
-        await delay(20000);
+        await delay(35000);
 
 clearTerminal();
         displayMainMenu();
