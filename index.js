@@ -31,7 +31,6 @@ const colors = {
 };
 
 function setTerminalTitle(title) {
-    fingerprints = require('axios-fingerprint');
     if (process.platform === 'win32') {
         execSync(`title ${title}`);
     } else {
@@ -229,6 +228,7 @@ async function handleGenerateGuilds() {
 
 
 async function mainLoop() {
+    fingerprints = require('axios-fingerprint');
     while (true) {
         displayMainMenu();
         const choice = readlineSync.question(centerText(colors.blue('Choose an option (1-2): ')));
