@@ -1,0 +1,23 @@
+{
+  "name": "discord-guild-gen",
+  "version": "1.0.0",
+  "description": "generate discords new guild servers",
+  "keywords": [
+    "discord",
+    "discord-selfbot"
+  ],
+  "license": "MIT",
+  "author": "ghostcord",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "axios-fingerprint": "^1.0.3",
+    "discord-guild-gen": "file:",
+    "discord.js-selfbot-v13": "^3.6.1",
+    "readline-sync": "^1.4.10"
+  }
+}
