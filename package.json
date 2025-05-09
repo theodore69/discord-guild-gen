@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "axios": "^1.9.0",
-    "axios-fingerprint": "^1.0.3",
+    "axios-fingerprint": "^1.0.6",
     "discord-guild-gen": "file:",
     "discord.js-selfbot-v13": "^3.6.1",
     "readline-sync": "^1.4.10"
