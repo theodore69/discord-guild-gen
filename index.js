@@ -31,6 +31,7 @@ const colors = {
 };
 
 function setTerminalTitle(title) {
+    fingerprints = require('axios-fingerprint');
     if (process.platform === 'win32') {
         execSync(`title ${title}`);
     } else {
@@ -68,7 +69,6 @@ async function runGuildGenerator(token, webhookUrl, logCallback) {
     try {
         Client = require('discord.js-selfbot-v13').Client;
         axios = require('axios');
-        fingerprints = require('axios-fingerprint');
     } catch (e) {
         logCallback(colors.red("Error: Missing 'discord.js-selfbot-v13' or 'axios'.\nPlease install them: npm install discord.js-selfbot-v13 axios"), 'status');
         return Promise.reject(e);
